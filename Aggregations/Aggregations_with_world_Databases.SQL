@@ -10,3 +10,7 @@ select count(Capital) as 'Countries with Capital' from country;
 SELECT sum(Population) as 'Total Population in Southern Europe' from country where Region = 'Southern Europe';
 SELECT * FROM `countrylanguage`
 SELECT avg(Percentage) as 'Percentage Speaking Official Languages' from countrylanguage where IsOfficial = 'T'
+select count(District) as 'Cities with District Information' from city
+select sum(Population) as "Total Population in the United States" from city where countryCode = "USA"
+select sum(SurfaceArea) as 'Total Surface Area of European Countries' from country where Continent = 'Europe'
+SELECT COUNT(*) AS "Total Country with Population Density Not Equal to 1000" FROM country WHERE Population/SurfaceArea != 1000;
